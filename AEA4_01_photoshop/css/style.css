@@ -1,0 +1,250 @@
+body {
+    background: white;
+}/* */
+
+.logo {/* logo PHOTOSHOP */
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 20%;
+    background: rgb(32, 44, 64);
+    color: rgb(111, 168, 249);
+    text-align: center;
+    font-size: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 200px;
+    align-content: center;
+    letter-spacing: -4px;
+}
+
+
+/* EFECTOS */
+.contenedor{
+    width: 1100px;
+    margin: 50px auto;
+
+
+}
+.efecto {
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    float: left;
+
+
+}
+.efecto img{ 
+    width: 200px;
+    height: 200px;
+}
+
+
+ /*    FILTROS IMAGENES*/
+.desenfocar img {
+    -webkit-filter: blur(10px); /* Como es Experminetal se pone "-webkit" para Safari*/
+       -moz-filter: blur(10px); /* Como es Experminetal se pone "-moz" para Firefox*/    
+         -o-filter: blur(10px); /* Como es Experminetal se pone "-o" para Opera*/
+            filter: blur(10px);
+}
+.grises img{
+    filter: grayscale(100%);
+}
+
+.sombra img{
+    filter: drop-shadow(6px 6px 6px purple ); /* sombra: desplazamiento X, desplazamiento Y, difuminado y color */
+}
+
+.sepia img {
+    filter: sepia(100%);
+}
+
+.luminosidad img {
+    filter: brightness(200%);
+}
+
+.contraste img {
+    filter: contrast(200%);
+}
+
+.tono img{
+    filter: hue-rotate(90deg);
+}
+
+.invertir img {
+    filter: invert(100%);
+}
+.saturar img {
+    filter: saturate(200%);
+}
+
+.opacidad img {
+    filter: opacity(50%);
+}
+
+h1{
+    font-size: 40px;
+    background-color: gray;
+    text-align: center;
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fruta {
+    background-image:url(../img/fresa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 208px;
+    height: 208px;
+    margin: auto;
+}
+
+.superpuesta{
+    background-image:url(../img/llimona.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 208px;
+    height: 208px;
+    margin: auto;
+}
+
+.multiplicar .superpuesta {
+    mix-blend-mode: multiply;
+}
+
+.trama .superpuesta {
+    mix-blend-mode: screen;
+}
+
+.superponer .superpuesta {
+    mix-blend-mode: overlay;
+}
+
+.oscuro .superpuesta {
+    mix-blend-mode: darken;
+}
+
+.aclarar .superpuesta {
+    mix-blend-mode: lighten;
+}
+
+/* FILA 2 */
+.colormasoscuro .superpuesta {
+    mix-blend-mode: color-burn; /* "Color más oscuro" equivale a color-burn */
+}
+
+.colormasclaro .superpuesta {
+    mix-blend-mode: color-dodge; /* "Color más claro" equivale a color-dodge */
+}
+
+.luzintensa .superpuesta {
+    mix-blend-mode: hard-light;
+}
+
+.luzsuave .superpuesta {
+    mix-blend-mode: soft-light; 
+}
+
+.diferencia .superpuesta {
+    mix-blend-mode: difference; 
+}
+
+/* FILA 3 */
+.exclusion .superpuesta {
+    mix-blend-mode: exclusion; 
+}
+
+.tono2 .superpuesta {
+    mix-blend-mode: hue;
+}
+
+.saturacion .superpuesta {
+    mix-blend-mode: saturation; 
+}
+
+.color .superpuesta {
+    mix-blend-mode: color;
+}
+
+.luminosidad .superpuesta {
+    mix-blend-mode: luminosity;
+    
+}
+/* Contenedor del interruptor */
+.interruptor {
+    width: 80px;
+    height: 36px;
+    margin: auto;
+    position: relative;
+    background: #e6e6e6;
+    border-radius: 18px;
+    box-shadow:
+      inset 6px 6px 10px rgba(0,0,0,0.2),
+      inset -6px -6px 10px rgba(255,255,255,0.9);
+  }
+
+
+
+  /* Botón del interruptor NORMAL */
+  label {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: #f2f2f2;
+    border-radius: 50%;
+    border: solid 1px #999;
+    transition: .25s; /* Transición suave al moverse o cambiar estilo */
+    box-shadow:  6px 6px 12px rgba(0,0,0,0.25),
+                -2px -2px 5px rgba(255,255,255,0.9);
+  }
+  
+  /*BOTON Activado */
+  input[type="checkbox"]:checked + label {
+    left: 44px;
+    box-shadow: -6px 6px 12px rgba(0,0,0,0.25),    /* (izq + abajo + difusa // NEGRO)*/
+                2px -2px 5px rgba(255,255,255,0.9);/* (der + arriba + suave // BLANCO)*/
+} 
+
+/* Oculta checkbox por defecto */
+input[type=checkbox]{
+    visibility: hidden; 
+}
+/* ==================CAMBIAMO A TIRADORES ==================== */
+.efecto input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Track */
+.efecto input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #655ecf;
+    border-radius: 5px;
+}
+
+/* Thumb */
+.efecto input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -8px;
+}
+
+/* Focus */
+.efecto input[type=range]:focus {
+    outline: none;
+}

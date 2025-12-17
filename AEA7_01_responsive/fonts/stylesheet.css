@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Cooper Lt BT';
+    src: url('CooperBT-LightItalic.woff2') format('woff2'),
+        url('CooperBT-LightItalic.woff') format('woff'),
+        url('CooperBT-LightItalic.svg#CooperBT-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+

@@ -1,0 +1,105 @@
+:root{
+    --color1:#2E5266;
+    --color2:#6E8898;
+    --color3: #9FB1BC;
+    --color4: #D3D0CB;
+    --color5: #5B85AA;
+    --color6: #284B63;
+    --color7: #F4F9E9;
+
+    --tipografia1: Arial, Helvetica, sans-serif;
+    --tipografia2: Verdana;
+    --tipografia3: "Fascinate Inline", system-ui;
+    --tipografia4: Georgia, 'Times New Roman', Times, serif;
+    --tipografia5: "Caveat", cursive;
+}
+
+@font-face {
+    font-family: 'Cooper Lt BT';
+    src: url('fonts/CooperBT-LightItalic.woff2') format('woff2'),
+        url('fonts/CooperBT-LightItalic.woff') format('woff'),
+        url('fonts/CooperBT-LightItalic.svg#CooperBT-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    font-family: var(--tipografia5);
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+h1 {
+
+    font-family: var(--tipografia3);
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: var(--tipografia5);
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+    max-width: 1920px;
+    font-family: 'Cooper Lt BT';
+
+}
+.progres {
+    height: 10px;
+    background: var(--color2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    scale: 0.2 1;
+    animation: analitzador linear;
+    -webkit-animation-timeline: scroll();
+       -moz-animation-timeline: scroll();
+            animation-timeline: scroll();
+
+}
+
+@keyframes analitzador {
+    to{
+        scale: 1 1;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+      background-color:var(--color6);
+    }
+}
+
+@media (min-width:481px) and (max-width:1279px){
+    body {
+        background-color:var(--color4)
+    }
+    p{
+        margin: 0 auto;
+       
+    }
+}
+  
+@media (min-width: 1280px) {
+    body {
+      background-color:var(--color5);
+
+    }
+    p{
+        columns: 2;
+    }
+}
+
+.rodona{
+    width: 15rem;
+    height: 15rem;
+    background: var(--color2);
+    border-radius: 50%;
+    margin: auto ;
+}
+

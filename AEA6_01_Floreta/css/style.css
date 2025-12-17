@@ -1,0 +1,119 @@
+body{
+    background: skyblue; 
+}
+.fulla {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 100% 0% 100% 0%;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    transform-origin: 0 100px; 
+    background-image: linear-gradient(0deg, rgb(110, 5, 146), rgb(249, 158, 216));
+}
+
+.flor {
+    width:  300px;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.conjunt:hover .flor {
+    animation: 0.9s rotacio linear infinite;
+}
+
+.f1 {
+    transform: rotate(0deg);
+}
+
+.f2 {
+    transform: rotate(60deg);
+}
+
+.f3 {
+    transform: rotate(120deg);
+}
+
+.f4 {
+    transform: rotate(180deg);
+}
+
+.f5 {
+    transform: rotate(240deg);
+}
+
+.f6 {
+    transform: rotate(300deg);
+}
+
+.cor {
+    width: 50px;
+    height: 50px;
+    top: 125px;
+    left: 125px;
+    position: absolute;
+    border-radius: 50%;
+    background: yellow;
+    background-image: radial-gradient( rgb(255, 237, 197), rgb(229, 185, 82));
+}
+
+@keyframes rotacio {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.palo{
+    width: 15px;
+    height: 400px;
+    background: olivedrab;
+    position: absolute;
+    left: 150px;
+    top: 120px;
+    background-image: linear-gradient( rgb(190, 134, 13), rgb(75, 176, 12));
+    z-index: 1
+}
+.f7 {position: absolute;
+    left: 165px;
+    top: 300px;
+    background-image: linear-gradient( rgb(190, 134, 13), rgb(75, 176, 12));
+    width: 70px;
+    height: 70px;
+    ;
+}
+
+#maceta {
+        width: 120px;
+        height: 0;
+        border-bottom: 80px solid #b36d2f; /* color marrón maceta */
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        position: absolute;
+        border-radius: 4px;
+        left: 75px;
+        top: 450px;
+        transform: rotate(180deg);
+        z-index: 3;
+}
+
+#maceta2 {
+        width: 180px;
+        height: 25px;
+        background: rgb(145, 65, 27);
+        position: relative;
+        top: 75px;
+        left: -30px;
+        z-index: 3;
+}
+
+.conjunt {
+    background: yellow;
+    width: 300px;
+    height: 900px;
+}
+
