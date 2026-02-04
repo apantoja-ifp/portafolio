@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+    font-family: Helvetica;
+    }
+
+h1 {   
+    color: purple;
+    text-align: center;
+    text-shadow: 1px 3px 2px grey
+    }
+
+.contenidor {
+    width: 1280px;
+    margin: auto;
+    }
+.cap {
+    height: 120px;
+    }
+
+.cos {
+    overflow: scroll;
+    height: 800px;
+    }
+
+.peu {
+    background-color: black;
+    height:300px;
+    }
+
+li {
+    background-color: white;
+    height: 50px;
+    width: 180px;
+    margin: 10px;
+    float: left;
+    }
+      
+    
+    .esquerra, .centre, .dreta {
+        width: 20%;
+        float: left;
+    }
+
+    .centre {
+        background-color: white;
+        width: 60%;
+        overflow: scroll;
+        height: 600px;
+        
+    }
+    .dreta {
+        background-color: yellowgreen;
+    }
+p {
+    text-indent:50px
+    }
+
+    /*  CODI MENUS BURGER*/
+#alternador {
+    width: 5rem;
+    height: 5rem;
+  
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  #alternador label {
+    width: 5rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding-top: 1rem;
+    transition: all .5s ease;
+    opactiy: 1;
+    
+    
+  }
+  
+  #alternador a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+  
+  #alternador b {
+    display: block;
+    width: 4rem;
+    height: 0.5rem;
+    background: black;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  #alternador p {
+    display: none;
+  }
+  
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  * {
+    font-family: Arial, Sans-serif;
+  }
+  
+  #alternador ul {
+    margin-top: 3rem;
+    padding: 0;
+    width: 10rem;
+    background: gold;
+    overflow: hidden;
+    border:1px solid rgb(65, 198, 167);
+    border-radius: 20px;
+  }
+  
+  #alternador li {
+    width: 10rem;
+    line-height: 3rem;
+    background: rgb(214, 232, 219);
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    margin: 0 auto;
+    border-bottom: 8px solid rgb(0, 0, 0) ;
+    position: relative;
+    z-index: 200;
+    height: 3rem;
+    float: none;
+    background-color:silver;
+background-image:
+radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+background-size: 100px 50px;
+  }
+  
+
+  #alternador  li:hover {
+    box-shadow: inset 0 5px 8px -4px black;
+    top:1px;
+    left:1px;
+    z-index: 500;
+    background: grey;
+  }
+  .desplega {
+    position: absolute;
+    left: -12rem;
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  
+  #alternador h1 {
+    text-align: center;
+  }
+  
+  #alternador input[type=checkbox]:checked+label {
+    opacity:1;
+  }
+  
+  #alternador input[type=checkbox]:checked+label~.desplega {
+    left: 0;
+  }
